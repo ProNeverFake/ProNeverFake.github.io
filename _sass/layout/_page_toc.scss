@@ -130,6 +130,8 @@ html[data-theme="dark"] .home-section > h2:first-child {
 
 .project__header .archive__item-title {
   margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .project-card {
@@ -383,6 +385,8 @@ html[data-theme="dark"] .publication-list .publication-list__item:focus-within {
 
 .home-section--experience .home-entry h3 {
   margin-bottom: 0.08rem;
+  padding-bottom: 0;
+  border-bottom: 0;
   line-height: 1.3;
 }
 
