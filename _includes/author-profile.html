@@ -173,4 +173,18 @@
       {% endif %}      
     </ul>
   </div>
+
+  {% if site.data.languages.size > 0 %}
+  <div class="author__languages">
+    <h4>Languages</h4>
+    <ul>
+      {% for language in site.data.languages %}
+      <li>
+        <span>{{ language.language }}</span>
+        <span>{{ language.fluency }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
 </div>

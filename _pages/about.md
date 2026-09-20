@@ -1,56 +1,123 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Jicong Ao"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+{% include page-toc.html %}
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+<section id="about" class="home-section" markdown="1">
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+I am a Research Engineer in the Humanoid Robot Group at the AI Institute of Chinatelecom (TeleAI) in Shanghai. My research focuses on robot learning and task and motion planning, with current work on simulation foundations for robot manipulation.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+At TeleAI, I lead the simulation team developing scene, articulated-object, task, and demonstration generation for manipulation data production and sim-to-real policy transfer. My experience also includes agentic vision-language-action model deployment, robot control systems, LLM-based behavior tree generation, robot assembly, and robot milling.
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+</section>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<section class="home-section home-section--education" markdown="1">
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<h2 id="education">Education</h2>
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+<div class="home-entry home-entry--with-logo">
+<h3>M.Sc. in Mechanical Engineering</h3>
+<p class="home-entry__meta">Technical University of Munich, Munich, Germany<br>04.2021 - 10.2024</p>
+<p class="home-entry__fields">Fields: robot learning and task and motion planning</p>
+<img class="home-entry__logo" src="/images/logos/tum.png" alt="TUM logo" loading="lazy">
+</div>
 
-**Markdown generator**
+<div class="home-entry home-entry--with-logo">
+<h3>B.Sc. in Industrial Engineering</h3>
+<p class="home-entry__meta">Beijing Institute of Technology, Beijing, China<br>09.2016 - 08.2020</p>
+<p class="home-entry__fields">Field: production planning and optimization</p>
+<img class="home-entry__logo" src="/images/logos/bit.png" alt="BIT logo" loading="lazy">
+</div>
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+</section>
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+<section id="work-gallery" class="home-section home-section--work-gallery" markdown="1">
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+<h2>Work Gallery</h2>
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<div class="work-gallery">
+{% for item in site.data.work_gallery %}
+<article class="work-gallery__item{% if item.centered %} work-gallery__item--centered{% endif %}">
+  <video autoplay muted loop playsinline controls preload="metadata" aria-label="{{ item.title }}">
+    <source src="{{ item.video | relative_url }}" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="work-gallery__body">
+    <span class="work-gallery__project">{{ item.project }}</span>
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.description }}</p>
+    {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener">Project</a>{% endif %}
+  </div>
+</article>
+{% endfor %}
+</div>
+
+</section>
+
+<section class="home-section" markdown="1">
+
+<h2 id="projects">Projects</h2>
+
+<div class="home-list">
+{% assign projects = site.portfolio | sort: "order" %}
+{% for post in projects %}
+  {% include project-single.html %}
+{% endfor %}
+</div>
+
+</section>
+
+<section class="home-section" markdown="1">
+
+<h2 id="publications">Publications</h2>
+
+{% assign publications = site.publications | sort: "sort_order" %}
+<div class="home-list publication-list">
+{% for post in publications %}
+  {% include publication-single.html %}
+{% endfor %}
+</div>
+
+</section>
+
+<section class="home-section home-section--experience" markdown="1">
+
+<h2 id="experience">Experience</h2>
+
+<div class="home-entry home-entry--with-logo">
+<h3>Research Engineer, Humanoid Robot Group</h3>
+<p class="home-entry__meta">AI Institute of Chinatelecom (TeleAI), Shanghai<br>12.2024 - Present</p>
+<img class="home-entry__logo" src="/images/logos/teleai.png" alt="TeleAI logo" loading="lazy">
+</div>
+
+<div class="home-entry home-entry--with-logo">
+<h3>Research Intern, Embodied AI Group</h3>
+<p class="home-entry__meta">MEGVII Research (MEGVII Technology), Beijing<br>07.2024 - 11.2024</p>
+<img class="home-entry__logo" src="/images/logos/megvii.png" alt="MEGVII logo" loading="lazy">
+</div>
+
+<div class="home-entry home-entry--with-logo">
+<h3>Research Intern &amp; Thesis Student, Collective Learning Group</h3>
+<p class="home-entry__meta">Munich Institute of Robotics and Machine Intelligence (MIRMI), Munich<br>10.2022 - 06.2024</p>
+<img class="home-entry__logo" src="/images/logos/mirmi.png" alt="MIRMI logo" loading="lazy">
+</div>
+
+<div class="home-entry home-entry--with-logo">
+<h3>Thesis Student, Robotic Processing Group</h3>
+<p class="home-entry__meta">Institute for Machine Tools and Industrial Management (IWB), Munich<br>06.2022 - 10.2022</p>
+<img class="home-entry__logo" src="/images/logos/iwb.png" alt="IWB logo" loading="lazy">
+</div>
+
+<div class="home-entry home-entry--with-logo">
+<h3>Design and Manufacturing Engineer, Technical Department</h3>
+<p class="home-entry__meta">EDDIE Precision Machinery Co, ltd, Yantai<br>10.2020 - 04.2021</p>
+<img class="home-entry__logo" src="/images/logos/eddie.png" alt="EDDIE logo" loading="lazy">
+</div>
+
+</section>

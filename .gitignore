@@ -5,6 +5,10 @@ _site/
 # Ignore the directory for local files during development
 local/
 
+# Source-only media and disabled assets. Jekyll excludes these from publishing.
+/assets/videos/work-gallery/source/
+/images/profile-bird.png
+
 # Ignore the Gemfile that is generated
 Gemfile.lock
 

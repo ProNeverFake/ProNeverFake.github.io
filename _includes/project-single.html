@@ -1,0 +1,34 @@
+{% assign project_title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+
+<div class="list__item project-list__item">
+  <article class="archive__item project-card{% if post.logo %} project-card--with-logo{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="project__header">
+      <h2 class="archive__item-title" itemprop="headline">
+        <a href="{{ post.url | relative_url }}" rel="permalink">{{ project_title }}</a>
+      </h2>
+      {% if post.logo %}
+        <div class="project__actions">
+          <img class="project__logo" src="{{ post.logo | relative_url }}" alt="{{ project_title | escape }} logo" loading="lazy">
+        </div>
+      {% endif %}
+    </div>
+
+    {% if post.organization or post.location or post.period %}
+      <p class="project__meta">
+        {% if post.organization %}<span>{{ post.organization }}</span>{% endif %}
+        {% if post.location %}<span>{{ post.location }}</span>{% endif %}
+        {% if post.period %}<time>{{ post.period }}</time>{% endif %}
+      </p>
+    {% endif %}
+
+    {% if post.excerpt %}
+      <p class="project__summary" itemprop="description">{{ post.excerpt | markdownify | strip_html }}</p>
+    {% endif %}
+
+    {% if post.link %}
+      <div class="project__footer">
+        <a class="project__code-link" href="{{ post.link }}" target="_blank" rel="noopener">Code</a>
+      </div>
+    {% endif %}
+  </article>
+</div>

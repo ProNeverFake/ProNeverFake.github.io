@@ -1,0 +1,42 @@
+- title: "TeleArt"
+  project: "TeleAI"
+  description: "Large-scale simulation and synthetic pretraining for zero-shot articulated-object manipulation across real robot platforms."
+  video: "/assets/videos/work-gallery/gallery-todo-2.mp4"
+  url: "/projects/teleart/"
+
+- title: "TeleHive"
+  project: "TeleAI"
+  description: "A scalable distributed data synthesis system for large-scale robot manipulation demonstration synthesis with high parallelism."
+  video: "/assets/videos/work-gallery/gallery-todo.mp4"
+  url: "/projects/telehive/"
+
+- title: "TeleIllusion"
+  project: "TeleAI"
+  description: "A high-parallelism Isaac Lab simulation platform for skill-based motion generation, domain randomization, and large-scale robot manipulation data synthesis."
+  video: "/assets/videos/work-gallery/teleillusion.mp4"
+  url: "/projects/teleillusion/"
+
+- title: "Multimodal Assembly Reasoning"
+  project: "AssemLM"
+  description: "Spatial reasoning and pose prediction for multimodal robotic assembly."
+  video: "/assets/videos/work-gallery/assemlm-assembly.mp4"
+  url: "https://assemlmhome.github.io/"
+
+- title: "SDGScene"
+  project: "TeleAI"
+  description: "User-intent-driven indoor scene generation via semantic dependency graphs, combining VLM reasoning with constraint-based optimization."
+  video: "/assets/videos/work-gallery/gallery-todo-3.mp4"
+  url: "/projects/sdg-scene/"
+
+- title: "PDDL Assembly Line"
+  project: "MIRMI"
+  description: "Ontology-based planning and scheduling for a large-scale assembly production line."
+  video: "/assets/videos/work-gallery/mirmi-pddl-assembly-line.mp4"
+  url: "https://doi.org/10.1109/iros58592.2024.10802295"
+
+- title: "Wittenstein Gearbox Assembly"
+  project: "MIRMI"
+  description: "LLM-generated behavior tree execution for a multi-step gearbox assembly."
+  video: "/assets/videos/work-gallery/mirmi-gearbox-assembly.mp4"
+  url: "https://arxiv.org/abs/2409.10444"
+  centered: true

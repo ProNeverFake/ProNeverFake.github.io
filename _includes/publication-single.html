@@ -1,0 +1,45 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+{% assign publication_image = post.image | default: post.teaser %}
+{% assign publication_image_url = publication_image | relative_url %}
+
+<div class="publication-list__item">
+  <article class="archive__item publication{% if publication_image %} publication--with-image{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="publication__content">
+      <h2 class="archive__item-title publication__title" itemprop="headline">
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      </h2>
+
+      <p class="publication__venue">{{ post.venue }}{% if post.year %}, {{ post.year }}{% endif %}</p>
+
+      {% if post.authors %}
+        <p class="publication__authors">{{ post.authors }}</p>
+      {% endif %}
+
+      {% if post.paperurl or post.arxivurl or post.doiurl or post.projecturl or post.codeurl %}
+        <div class="publication__links" aria-label="Publication links">
+          {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+          {% if post.arxivurl %}<a href="{{ post.arxivurl }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
+          {% if post.doiurl %}<a href="{{ post.doiurl }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+          {% if post.projecturl %}<a href="{{ post.projecturl }}" target="_blank" rel="noopener">Project</a>{% endif %}
+          {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank" rel="noopener">Code</a>{% endif %}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if publication_image %}
+      <figure class="publication__figure">
+        <img src="{{ publication_image_url }}" alt="{{ post.image_alt | default: title }}" loading="lazy">
+        {% if post.image_caption %}
+          <figcaption>{{ post.image_caption }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
+  </article>
+</div>
