@@ -28,7 +28,7 @@
   video: "/assets/videos/work-gallery/gallery-todo-3.mp4"
   url: "/projects/sdg-scene/"
 
-- title: "PDDL Assembly Line"
+- title: "Multi-Step Task Planning"
   project: "MIRMI"
   description: "Ontology-based planning and scheduling for a large-scale assembly production line."
   video: "/assets/videos/work-gallery/mirmi-pddl-assembly-line.mp4"
