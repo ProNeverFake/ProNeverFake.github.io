@@ -1,5 +1,5 @@
 ---
-title: "SDGScenes: User-intent driven indoor scene generation via semantic dependency graph"
+title: "SDGScenes: User-Intent-Driven Indoor Scene Generation via Semantic Dependency Graph"
 collection: publications
 category: manuscripts
 permalink: /publication/sdgscenes-user-intent-driven-indoor-scene-generation-via-semantic-dependency-graph

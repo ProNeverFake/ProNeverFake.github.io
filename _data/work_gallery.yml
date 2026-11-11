@@ -1,8 +1,8 @@
-- title: "TeleArt"
+- title: "SMART"
   project: "TeleAI"
   description: "Large-scale simulation and synthetic pretraining for zero-shot articulated-object manipulation across real robot platforms."
   video: "/assets/videos/work-gallery/gallery-todo-2.mp4"
-  url: "/projects/teleart/"
+  url: "/projects/smart/"
 
 - title: "TeleHive"
   project: "TeleAI"

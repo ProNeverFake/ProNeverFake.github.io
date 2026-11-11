@@ -1,13 +1,13 @@
 ---
-title: "TeleArt: Large-Scale Simulation for Zero-Shot Sim2Real Articulation Manipulation"
+title: "SMART: Large-Scale Simulation for Zero-Shot Sim2Real Articulation Manipulation"
 excerpt: "Large-scale synthetic demonstration generation for zero-shot articulated object manipulation and VLA pretraining."
 organization: "TeleAI"
 location: "Shanghai"
 period: "03.2026 - 09.2026"
-logo: "/images/project-logos/teleart.png"
+logo: "/images/project-logos/smart.png"
 collection: portfolio
 order: 1
-permalink: /projects/teleart/
+permalink: /projects/smart/
 ---
 
 **TeleAI, Shanghai | 03.2026 - 09.2026**

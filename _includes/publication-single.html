@@ -22,10 +22,11 @@
         <p class="publication__authors">{{ post.authors }}</p>
       {% endif %}
 
-      {% if post.paperurl or post.arxivurl or post.doiurl or post.projecturl or post.codeurl %}
+      {% if post.paperurl or post.arxivurl or post.dataseturl or post.doiurl or post.projecturl or post.codeurl %}
         <div class="publication__links" aria-label="Publication links">
           {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}
           {% if post.arxivurl %}<a href="{{ post.arxivurl }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
+          {% if post.dataseturl %}<a href="{{ post.dataseturl }}" target="_blank" rel="noopener">Dataset</a>{% endif %}
           {% if post.doiurl %}<a href="{{ post.doiurl }}" target="_blank" rel="noopener">DOI</a>{% endif %}
           {% if post.projecturl %}<a href="{{ post.projecturl }}" target="_blank" rel="noopener">Project</a>{% endif %}
           {% if post.codeurl %}<a href="{{ post.codeurl }}" target="_blank" rel="noopener">Code</a>{% endif %}

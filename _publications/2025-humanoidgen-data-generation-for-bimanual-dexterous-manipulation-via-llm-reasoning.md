@@ -1,5 +1,5 @@
 ---
-title: "HumanoidGen: Data generation for bimanual dexterous manipulation via LLM reasoning"
+title: "HumanoidGen: Data Generation for Bimanual Dexterous Manipulation via LLM Reasoning"
 collection: publications
 category: conferences
 permalink: /publication/humanoidgen-data-generation-for-bimanual-dexterous-manipulation-via-llm-reasoning
